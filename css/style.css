@@ -43,7 +43,7 @@ body {
   background-color: #f3f2f2;
 }
 
-#header {
+.header_section {
   position: fixed;
   width: 100%;
   max-width: 1440px;
@@ -54,12 +54,6 @@ body {
   z-index: 1000;
   background-color: rgb(255, 255, 255);
   border-bottom: solid 1px #4f6abb;
-}
-
-.header a:hover {
-  opacity: 0.7;
-	transition: 0.3s;
-  color: #4f6abb;
 }
 
 .site_title {
@@ -76,6 +70,12 @@ body {
   text-align: center;
 }
 
+.site_title a:hover {
+  opacity: 0.7;
+	transition: 0.3s;
+  color: #e7e8e9;
+}
+
 .nav {
   margin: 0 0 0 auto;
   margin-right: 40px;
@@ -84,6 +84,12 @@ body {
 .nav_list {
   display: flex;
   justify-content: right;
+}
+
+.nav_list a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  color: #4f6abb;
 }
 
 .nav_item {
@@ -97,7 +103,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 16px;
 }
 
 .hero_section_image img {
@@ -150,20 +155,18 @@ body {
   justify-content: center;
 }
 
-.about_item {
-  margin-left: 160px;
-}
-
 .about_lead {
   font-size: 1.5rem;
   font-family: "Yu Gothic UI" ,"	Hiragino Sans" ,sans-serif;
   margin-bottom: 20px;
   padding-top: 20px;
   font-weight: bold;
+  margin-left: 160px;
 }
 
 .about_text {
   line-height: 1.5;
+  margin-left: 160px;
 }
 
 #diary {
@@ -216,7 +219,7 @@ body {
 /**タブレットサイズ**/
 
 @media screen and (max-width:768px) {
-.body {
+body {
    max-width: 768px;
 }
 
@@ -245,7 +248,7 @@ body {
 /**スマートフォンサイズ**/
 
 @media screen and (max-width: 414px) {
-.body {
+body {
   max-width: 414px;
 }
 
